@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'recipes', #nome do app criado a partir do comando 'python manage.py startapp recipes'
 ]
 
 MIDDLEWARE = [
