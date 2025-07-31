@@ -2,5 +2,5 @@ from django.urls import path #importar a função path do modulo de urls do djan
 from . import views
 
 urlpatterns = [
-    path('',views.home, name='recipes_home'),
+    path('', views.recipe_list, name='recipes_list'),
 ]
