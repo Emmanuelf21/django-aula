@@ -71,7 +71,7 @@
             margin-top: 1.5rem;
             margin-bottom: 1.5rem;
         }
-        .empty-messagem{
+        .empty-message{
             text-align: center;
             font-style: italic;
             color: #6b7280;
@@ -87,8 +87,8 @@
     <h1>Receitas cadastradas!</h1>
     {% for recipe in recipes %}
         <div class="recipe-item">
-            {% if recipe.imagem %}
-                <img src="{{recipe.image.url}}" alt="">
+            {% if recipe.image %}
+                <img src="{{ recipe.image.url }}" alt="">
             {% endif %}
             <div class="recipe-content">
                 <h2><a href="{% url 'recipe_detail' recipe.pk %}">{{recipe.title}}</a></h2>
@@ -99,7 +99,7 @@
         </div>
         <hr>
     {% empty %}
-        <p>Nenhuma receita cadastrada.</p>
+        <p class="empty-message">Nenhuma receita cadastrada.</p>
     {% endfor %}
     </div>
 </body>
